@@ -4,7 +4,9 @@ This project includes a responsive sign-up and sign-in form with validation in v
 
 ## Features
 Toast Notification: Displays success or error messages to guide users through the form process.
+
 Single-Page Interaction: Prevents page redirection on form submission, keeping users on the same page.
+
 Responsive Design: Adjusts layout and styling for various screen sizes, providing a mobile-friendly experience.
 
 ## File Structure
