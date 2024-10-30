@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up & sign-in</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Left Panel (shared between sign-up and sign-in) -->
+        <div class="left-panel-content" id="left-panel">
+            <h1 id="left-title">Create an Account</h1>
+            <p id="left-description">Join us and explore endless possibilities. Sign up today!</p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-container" id="sign-up-container">
+            <h1>Sign Up</h1>
+            <form action="#" method="POST" onsubmit="validateForm(event)">
+                <label for="email">Email</label>
+                <input type="email" id="signup-email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="signup-password" name="password" required>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="javascript:void(0);" onclick="showSignIn()">Sign In</a></p>
+        </div>
+
+        <!-- Sign In Form (Initially Hidden) -->
+        <div class="form-container hide" id="sign-in-container">
+            <h1>Sign In</h1>
+            <form action="#" method="POST" onsubmit="validateAccount(event)">
+                <label for="email">Email</label>
+                <input type="email" id="signin-email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="signin-password" name="password" required>
+                <button type="submit">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="javascript:void(0);" onclick="showSignUp()">Sign Up</a></p>
+        </div>
+    </div>
+    <!-- Toast Notification Div -->
+    <div id="toast"></div>
+</body>
+</html>
