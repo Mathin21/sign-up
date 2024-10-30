@@ -9,7 +9,9 @@ Responsive Design: Adjusts layout and styling for various screen sizes, providin
 
 ## File Structure
 index.html: Contains the HTML structure for the sign-up and sign-in forms.
+
 styles.css: Defines styles for the form, layout, and toast notifications.
+
 script.js: Implements JavaScript for form validation, toast notification handling, and form submission.
 
 ## How to Use
